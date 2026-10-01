@@ -1,0 +1,308 @@
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: #F5F1EA; /* Linen */
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    color: #4A342A; /* Espresso */
+}
+
+/* Навигация */
+.navbar {
+    background: #4A342A; /* Espresso */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-group {
+    gap: 10px;
+}
+
+.nav-link {
+    color: #F5F1EA !important;
+    text-align: center;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #B2B67D !important; /* Camel */
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4A342A; /* Espresso */
+}
+
+/* Акция и таймер */
+.unique-offer {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #4A342A;
+}
+
+.q {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #4A342A;
+}
+
+.timer {
+    font-size: 2.8rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    
+}
+
+.timer .time-block {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+.timer .number {
+    font-size: 3rem;
+    font-weight: 700;
+    background: #B2B67D; /* Camel */
+    padding: 0 0.5rem;
+    border-radius: 12px;
+    min-width: 80px;
+    text-align: center;
+    color: #F5F1EA;
+    font-family: monospace;
+    
+}
+
+.timer .label {
+    font-size: 0.9rem;
+    text-transform: lowercase;
+    color: #4A342A;
+    margin-top: 5px;
+}
+
+/* Слайдер */
+.slider {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    scroll-margin-block: 700px;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 100%;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: #7D5A44; /* Cocoa */
+    color: #F5F1EA;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+.next:hover, .prev:hover {
+    background: #4A342A; /* Espresso */
+}
+
+/* Карточки */
+.card {
+    background: #F5F1EA; /* Linen */
+    color: #4A342A;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    background: #D7C9B8; /* Khaki */
+}
+
+.card img {
+    border-radius: 12px 12px 0 0;
+    border: none;
+}
+
+.card-group {
+    gap: 10px;
+}
+
+/* Формы */
+.form-floating {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-secondary {
+    --bs-bg-opacity: 1;
+    background-color: #B2B67D !important; /* Camel */
+    border-color: #B2B67D;
+    color: #F5F1EA;
+}
+.btn-secondary:hover {
+    background-color: #7D5A44 !important;
+    border-color: #7D5A44;
+}
+
+/* Футер */
+.footer-links {
+    color: #F5F1EA;
+    text-decoration: none;
+    background: #4A342A; /* Espresso */
+    padding: 1.5rem 0;
+   
+    
+}
+
+.address {
+    background: #4A342A;
+    color: #D7C9B8;
+    padding: 10px;
+    font-size: 0.9em;
+  
+}
+
+/* Модальное окно */
+.modal-body, .modal-header, .modal-footer {
+    background: #D7C9B8; /* Khaki */
+    color: #4A342A;
+}
+.inputinput-modal {
+    background-color: #F5F1EA;
+    border: 1px solid #B2B67D;
+}
+
+a {
+    color: #B2B67D;
+    text-decoration: none;
+    transition: color 0.2s;
+  
+}
+a:hover {
+    color: #7D5A44;
+}
+
+/* Галерея */
+.photo {
+    color: #4A342A;
+}
+.photo a:hover {
+    opacity: 0.7;
+}
+.photo {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+.photo img:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+figcaption {
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+.category-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #D7C9B8;
+    text-align: left;
+    color: #4A342A;
+}
+
+/* Анимации */
+.navbar-brand img {
+    animation: spin 3s linear infinite;
+}
+.navbar-brand:hover img {
+    animation: none;
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.btn-success {
+    background-color: #B2B67D !important;
+    border-color: #B2B67D;
+    color: #F5F1EA;
+    animation: slightMove 1.5s ease-in-out infinite;
+}
+.btn-success:hover {
+    background-color: #7D5A44 !important;
+    border-color: #7D5A44;
+    animation: none;
+}
+@keyframes slightMove {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+/* Дополнительная стилизация для кнопок Bootstrap */
+.btn-primary {
+    background-color: #B2B67D;
+    border-color: #B2B67D;
+    color: #F5F1EA;
+}
+.btn-primary:hover {
+    background-color: #7D5A44;
+    border-color: #7D5A44;
+}
+.btn-outline-success {
+    border-color: #B2B67D;
+    color: #4A342A;
+}
+.btn-outline-success:hover {
+    background-color: #B2B67D;
+    color: #F5F1EA;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="./icon/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Симбирск- курорт</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./icon/logo.png" alt="Logo" height="70"> 
+                </a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#slider">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index — копия.html">Достопримечательности </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index — копия 3.html">Стоимость и цены</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index — копия 4.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn btn-primary" href="../index.html" role="button">Назад</a>
+            </div>
+        </nav>
+    </header>
+      <!-- Банер -->
+    <section class="slider" id="slider">
+        <div class="slides">
+            <img src="./img/1.jpg" alt="Slide 1" class="slide">
+            <img src="./img/2.jpg" alt="Slide 2" class="slide">
+            <img src="./img/3.jpg" alt="Slide 3" class="slide">
+        </div>
+        <button class="prev">&lt;</button>
+        <button class="next">&gt;</button>
+        <div class="indicators">
+            <div class="indicator active"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+        </div>
+    </section>
+      <!-- Справка об озере -->
+   <section class="row justify-content-center fade-in">
+<div class="card" style="width: 50rem;">
+  <img src="./img/Белое_озеро.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h1>Озеро Белое</h1>
+    <p class="card-text">Белое озеро (Ульяновская область) - это своеобразный исторический памятник, ведь оно берет свое
+начало со времен ледникового периода. Его возраст - более 250 тысяч лет. Не зря его так назвали,
+кристально-белый песок и зеркальная гладь прозрачной воды полностью оправдывают звучное имя.</p>
+  </div>
+</div>
+</section>
+ <!-- Карта белого озера -->
+   </section>
+    <div class="map fade-in" id="map">
+        <h1>Карта белого озера</h1>
+        <img src="./img/5.png" class="rounded mx-auto d-block" alt="..."> >
+    </div>
+ <!-- Расписание -->
+</section>
+    <section class="fade-in" id="schedule">
+        <header>
+            <h1>Расписание на день</h1>
+        </header>
+        
+        <main>
+            <section class="schedule">
+                <h2>Сегодня</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Время</th>
+                            <th>Задача</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00 - 10:00</td>
+                            <td> подъем</td>
+                        </tr>
+                        <tr>
+                            <td>10:30 - 12:00</td>
+                            <td>Завтрак</td>
+                        </tr>
+                        <tr>
+                            <td>12:30 - 13:30</td>
+                            <td>Обед</td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 15:30</td>
+                            <td>працедуры</td>
+                        </tr>
+                        <tr>
+                            <td>16:00 - 17:30</td>
+                            <td>Подведение итогов дня</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </section>
+
+ <footer class="bg-light text-center py-3">
+    <p>Адрес: Ульяновск ул. Примерная, 123</p>
+    <p>Телефон: +7 (495) 123-45-67</p>
+    <p>Email: info@example.com</p>
+</footer>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">🌙</button>
+    <script src="./theme.js"></script>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* Переменные для светлой и тёмной темы — централизованное управление цветами */
+:root {
+  --bg-body: #f8f9fa;           /* Основной фон страницы (светлый) */
+  --bg-card: #fff;              /* Фон карточек */
+  --bg-navbar: #CF8133;         /* Цвет фона шапки */
+  --bg-footer: #CF8133;         /* Цвет подвала */
+  --bg-algorithm: #fafcff;       /* Фон блока с алгоритмом работы */
+  --text-primary: #212529;      /* Основной цвет текста */
+  --text-nav-link: white;       /* Цвет ссылок в меню навигации */
+  --text-muted: #6c757d;        /* Цвет приглушённого текста */
+  --text-unique: #7A6C5A;       /* Цвет текста уникального предложения */
+  --btn-bg: #C38E45;            /* Цвет фона кнопки «Купить» */
+  --btn-hover: #A67739;         /* Цвет кнопки при наведении */
+  --btn-color: white;           /* Цвет текста на кнопке */
+  --slider-btn-bg: #CF8133;    /* Цвет кнопок слайдера */
+  --slider-btn-color: white;   /* Цвет текста кнопок слайдера */
+  --card-shadow: rgba(0, 0, 0, 0.2); /* Тень у карточек */
+  --link-color: white;          /* Цвет ссылок в подвале */
+  --border-color: #dee2e6;      /* Цвет границ */
+}
+
+/* Переопределение переменных для тёмной темы при наличии атрибута data-theme="dark" */
+[data-theme="dark"] {
+  --bg-body: #121212;           /* Тёмный фон страницы */
+  --bg-card: #1e1e1e;          /* Тёмный фон карточек */
+  --bg-navbar: #1a1a2e;        /* Тёмный цвет шапки */
+  --bg-footer: #1a1a2e;        /* Тёмный цвет подвала */
+  --bg-algorithm: #1e1e1e;     /* Тёмный фон блока алгоритма */
+  --text-primary: #e0e0e0;     /* Светлый основной текст для тёмной темы */
+  --text-nav-link: #e0e0e0;    /* Светлый цвет ссылок в меню */
+  --text-muted: #a0a0a0;       /* Приглушённый текст в тёмной теме */
+  --text-unique: #c0a88a;      /* Цвет УТП в тёмной теме */
+  --btn-bg: #3a3a5c;           /* Цвет кнопки в тёмной теме */
+  --btn-hover: #4a4a6c;        /* Цвет кнопки при наведении в тёмной теме */
+  --btn-color: #e0e0e0;        /* Цвет текста кнопки в тёмной теме */
+  --slider-btn-bg: #3a3a5c;   /* Цвет кнопок слайдера в тёмной теме */
+  --slider-btn-color: #e0e0e0; /* Цвет текста кнопок слайдера в тёмной теме */
+  --card-shadow: rgba(0, 0, 0, 0.5); /* Более выраженная тень для тёмной темы */
+  --link-color: #f5ecff;      /* Цвет ссылок в подвале для тёмной темы */
+  --border-color: #333;       /* Тёмный цвет границ */
+}
+
+/* Применение переменных к body для плавного перехода между темами */
+body {
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Установка цвета фона шапки через переменную */
+.navbar {
+  background: var(--bg-navbar) !important;
+}
+
+/* Цвет ссылок навигации */
+.nav-link {
+  color: var(--text-nav-link) !important;
+}
+
+/* Стилизация карточек: фон и тень через переменные */
+.card {
+  background-color: var(--bg-card) !important;
+  box-shadow: 0 5px 15px var(--card-shadow) !important;
+}
+
+/* Цвет текста внутри карточки */
+.card-body {
+  color: var(--text-primary);
+}
+
+/* Кнопка «Купить»: цвета через переменные */
+.button-buy {
+  background-color: var(--btn-bg) !important;
+  border-color: var(--btn-bg) !important;
+  color: var(--btn-color) !important;
+}
+
+/* Эффект при наведении на кнопку «Купить» */
+.button-buy:hover {
+  background-color: var(--btn-hover) !important;
+  border-color: var(--btn-hover) !important;
+}
+
+/* Цвет заголовка уникального торгового предложения */
+.unique-offer {
+  color: var(--text-unique) !important;
+}
+
+/* Кнопки переключения слайдов: цвета через переменные */
+.prev, .next {
+  background-color: var(--slider-btn-bg) !important;
+  color: var(--slider-btn-color) !important;
+}
+
+/* Подвал: цвет фона */
+footer {
+  background-color: var(--bg-footer) !important;
+}
+
+/* Ссылки в подвале: цвет через переменную */
+footer a.text-light,
+footer .text-light {
+  color: var(--link-color) !important;
+}
+
+/* Текст в подвале: цвет через переменную */
+footer p {
+  color: var(--text-primary) !important;
+}
+
+/* Блок алгоритма работы: цвет фона через переменную */
+.Algorithm {
+  background-color: var(--bg-algorithm) !important;
+}
+
+/* Приглушённый текст: цвет через переменную */
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Основная кнопка Bootstrap: переопределение цветов через переменные */
+.btn-primary {
+  background-color: var(--btn-bg) !important;
+  border-color: var(--btn-bg) !important;
+  color: var(--btn-color) !important;
+}
+
+/* Эффект при наведении на основную кнопку Bootstrap */
+.btn-primary:hover {
+  background-color: var(--btn-hover) !important;
+  border-color: var(--btn-hover) !important;
+}
+
+/* Контейнер переключателя темы */
+.theme-switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  color: var(--text-nav-link);
+}
+
+/* Скрываем стандартный чекбокс переключателя темы */
+.theme-switch input {
+  display: none;
+}
+
+/* Визуальный слайдер переключателя темы (фон) */
+.theme-switch .slider-toggle {
+  width: 44px;
+  height: 24px;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+  flex-shrink: 0;
+}
+
+/* Кружок внутри слайдера переключателя темы */
+.theme-switch .slider-toggle::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.3s;
+}
+
+/* Стиль фона слайдера при включённой тёмной теме */
+.theme-switch input:checked + .slider-toggle {
+  background-color: rgba(255,255,255,0.6);
+}
+
+/* Позиция кружка внутри слайдера при включённой тёмной теме */
+.theme-switch input:checked + .slider-toggle::before {
+  transform: translateX(20px);
+}

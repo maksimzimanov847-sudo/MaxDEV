@@ -1,0 +1,199 @@
+/* Тело сайта*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f8f9fa; /* Светло-серый фон */
+}
+.container { /* Центральный контейнер для выравнивания содержимого */
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar{
+    background: #CF8133; /*Цвет шапки*/
+}
+
+.nav-link{ /* Ссылки на шапке */
+    color: white;
+    margin-right: 50px; 
+}
+.slider { /*Слайдер*/
+    position: relative;
+    width: auto;
+    height: 1000px;
+    overflow: hidden;
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    scroll-margin-block: 700px;
+    border: 400px;
+    border: color(srgb-linear rgb(0, 0, 0) green blue);
+}
+
+.slides { /*Слайды анимация */
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+}
+.slides img{ /*Слайды размер фото*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+ 
+}
+.slide { /*Сами Слайды*/
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    
+}
+.prev, .next { /*Кнопки переключения слайдов*/
+    position: absolute;
+    top: 50%;
+    background-color:  #CF8133;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px; 
+    cursor: pointer;
+    z-index: 10; 
+    border-radius: 50%;  
+}
+.prev {
+    left: 15px;
+}
+.next {
+    right: 15px;
+}
+.timer {/*Таймер утп*/
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.button-buy {/*;Кропка купить */
+    background-color: #C38E45;
+    border-color: #C38E45;
+    color: white;
+    border: radius 10px;;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.button-buy:hover {/*Эфекты кнопки купить*/
+    background-color: #A67739; 
+    border-color: #A67739;
+}
+.unique-offer {/* утп цвет*/
+    color: #7A6C5A;
+}
+.q{/*P Размер шрифта */
+    font-size: 26px;
+}
+.card{/*Карточки внешка */
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s ease;
+
+}
+
+.title{/*Заголовок секции */
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.card-img2-top{
+    height: 200px;
+    width: 100%;
+    object-fit: cover; 
+    border-color: #CF8133;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.algorithm_img{
+    width: 60px;
+    height: 60px;
+    margin-left: 370px;
+}
+.algorithm{/*Текст алгоритма работы */
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+.Algorithm{/*Блок алгоритма работы */
+  background-color: #fafcff;
+  border-radius: 8%;
+
+}
+
+.btn{/*Общая кнопка */
+    background-color: #CF8133;
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    cursor: pointer;
+    
+}
+footer{/*Подвал сайта */
+    background-color: #CF8133;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Переключаем на вертикальный вид */
+    }
+
+    .nav-link {
+        margin: 10px 0; /* Увеличен вертикальный отступ */
+    }
+
+    .slider {
+        height: 400px; /* Уменьшение высоты слайда на мобильных */
+        margin-bottom: -500px !important;
+    }
+
+    .unique-offer {
+        font-size: 1.5rem; /* Уменьшен размер заголовка */
+        margin-top: 555px;
+    }
+
+    .q {
+        font-size: 20px; /* Уменьшен размер текста */
+    }
+
+    .card {
+        margin: 10px; /* Уменьшен отступ между карточками */
+        margin-top: 100px;
+    }
+
+    .timer {
+        font-size: 1rem; /* Уменьшен размер таймера */
+    }
+
+    .algorithm_img {
+        width: 40px; /* Уменьшен размер изображения алгоритма */
+        height: 40px;
+    }
+
+    .algorithm {
+        font-size: 18px; /* Уменьшен размер текста алгоритма */
+    }
+
+    footer {
+        padding: 10px; /* Уменьшен отступ в футере */
+    }
+}

@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+     background: orange
+}
+.navbar{
+    background: rgb(226, 120, 21) !important;
+   
+}

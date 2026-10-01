@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 359.77 351.65">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        stroke: #3c2415;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-5 {
+        fill: #d1d3d4;
+        stroke-width: 9px;
+      }
+
+      .cls-4 {
+        fill: none;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 36px;
+        stroke: #d1d3d4;
+        stroke-width: 2px;
+      }
+
+      .cls-5, .cls-6 {
+        stroke: #754c29;
+      }
+
+      .cls-6 {
+        fill: #754c29;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <text class="cls-4" transform="translate(114.91 341.65)"><tspan x="0" y="0">Ах</tspan><tspan class="cls-1" x="38.7" y="0">ил</tspan><tspan class="cls-2" x="77.18" y="0">лес</tspan></text>
+  <path class="cls-3" d="M267.79,154.84c0-38.78,32.66-73.32,83.5-95.57C311.35,25.95,248.92,4.5,178.76,4.5S49.33,24.88,9.3,56.78c63.81,21.21,106.56,60.01,106.56,104.38,0,37.33-30.26,70.71-77.86,93,38.01,20.8,87.13,33.34,140.77,33.34,62.25,0,118.41-16.88,158.18-43.96-42.55-22.17-69.15-53.7-69.15-88.7Z"/>
+  <circle class="cls-6" cx="84.05" cy="53.99" r="17.75"/>
+  <circle class="cls-6" cx="144.93" cy="48.99" r="17.75"/>
+  <circle class="cls-6" cx="198.05" cy="61.24" r="17.75"/>
+  <circle class="cls-6" cx="251.16" cy="66.74" r="17.75"/>
+  <circle class="cls-6" cx="101.8" cy="251.37" r="17.75"/>
+  <circle class="cls-6" cx="157.63" cy="243.37" r="17.75"/>
+  <circle class="cls-6" cx="210.74" cy="255.62" r="17.75"/>
+  <circle class="cls-6" cx="261.25" cy="251.37" r="17.75"/>
+  <polygon class="cls-5" points="187.93 185.24 165.35 166.37 170.4 137.37 198.05 127.24 220.63 146.12 215.58 175.12 187.93 185.24"/>
+</svg>
